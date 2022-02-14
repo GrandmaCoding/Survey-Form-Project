@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "style.css" rel = "stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <title>Survey</title>
+</head>
+<body>
+    <h3 id = "lex">Lex Praxis</h3>
+  <div id = "head">
+
+    <h1 class = "centered" id = "title">Lex Praxis Licensing Survey Form</h1>
+    <p class = "centered" id = "description"><i>Please fill out this form so we can better serve the Lex Praxis Community.</i></p>
+  </div>
+  <form id = "survey-form">
+    <label for = "name" id = "name-label">
+      <p>Name</p>
+      <input type = "text" id = "name" placeholder = "Enter your name." required>
+    </label>
+    <label for = "firm" id = "firm-label" >
+      <p>Law Firm</p>
+      <input type = "text" id = "firm">
+    </label>
+    <label for = "email" id = "email-label">
+      <p>Email</p>
+      <input type = "email" id = "email" placeholder = "something@somewhere.com" required>
+    </label>
+    <label for = "number" id = "number-label">
+      <p>Number of licenses held</p>
+      <input type = "number" id = "number" placeholder = "(1-100)" min = "1" max = "100" required>
+    </label>
+    <label for = "licenseType">
+      <p>License type</p>
+      <select id = "dropdown">
+        <option value = "individual">Individual</option>
+        <option value = "student">Student</option>
+        <option value = "notary">Notary</option>
+        <option value = "lawyer">Lawyer</option>
+        <option value = "firm">Law Firm</option>
+      </select>
+    </label>
+    <label><p>Would you like to join our newsletter?</p></label>
+    <input type = "radio" id = "yes" name = "newsletter" value = "yes">
+    <label for = "yes">Yes!</label>
+    <input type = "radio" id = "no" name = "newsletter" value = "no" checked>
+    <label for = "no">Absolutely not.</label>
+    <label><p>What do you use Lex Praxis for? (Check all that apply)</p></label>
+    <div id = "checks">
+      <div>
+        <label for = "formAuto">
+          <input type = "checkbox" id = "formAuto" value = "formAuto">Form Automation
+        </label>
+      </div>
+      <div>
+        <label for = "documentAuto">
+          <input type = "checkbox" id = "documentAuto" value = "documentAuto">Legal Document Automation
+        </label>
+      </div>
+      <div>
+        <label for = "localLaw">
+          <input type = "checkbox" id = "localLaw" value = "localLaw">Local Law
+        </label>
+      </div>
+      <div>
+        <label for = "stateLaw">
+          <input type = "checkbox" id = "stateLaw" value = "stateLaw">State Law
+        </label>
+      </div>
+      <div>
+        <label for = "fedLaw">
+          <input type = "checkbox" id = "fedLaw" value = "fedLaw">Federal Law
+        </label>
+      </div>
+            <div>
+        <label for = "usIpLaw">
+          <input type = "checkbox" id = "usIpLaw" value = "usIpLaw">USPTO Law
+        </label>
+      </div>
+    </div>
+    <label for = "comments">Additional comments
+      <textarea id = "comments" rows = "5"></textarea>
+        </label>
+    <input type = "submit" id = "submit">
+  </form>
+  <footer>
+    <h3>Background image from: <a href = "https://www.fool.com/careers/2017/08/17/5-things-you-should-never-do-during-a-business-mee.aspx" target= "_blank">fool.com</a> (how poetic)</h3>
+  </footer>
+</body>
+</html>

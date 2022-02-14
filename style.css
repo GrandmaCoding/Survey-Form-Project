@@ -1,0 +1,111 @@
+html {font-family: 'Montserrat',serif;}
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(30, 144, 255, 0.5)), url("https://g.foolcdn.com/image/?url=https%3A//g.foolcdn.com/editorial/images/453779/business-meeting_gettyimages-603992138.jpg&w=2000&op=resize");
+  margin: auto;
+  text-align: center;
+}
+
+#head {
+  margin: auto 32em;
+}
+
+#lex {
+  margin-left: 7em;
+  text-align: left;
+}
+
+#survey-form {
+  background: rgb(30,144,255,90%);
+  border: 2px solid white;
+  border-radius: .3em;
+  color:white;
+  margin: 2em 32em;
+  padding: 2em;
+  text-align: left;
+}
+
+#survey-form label {
+  font-size: 130%;
+}
+
+label p {
+  margin: .25em;
+}
+
+input, button, select, textarea {
+  border: 1px solid black;
+  border-radius: .3em;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 1em;
+}
+
+select, input, textarea{
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 1em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+}
+
+div input[type="checkbox"] {
+  margin-bottom: .5em;
+  margin-right: 1em;
+  transform: scale(200%);
+}
+
+#checks {
+  margin-bottom: 1em;
+}
+
+#submit {
+  float: right;
+  width: auto;
+}
+
+@media (max-width: 1685px) {
+  #survey-form, #head {
+    margin: 2em 22.5em;
+  }
+}
+
+@media (max-width: 1385px) {
+  #survey-form, #head {
+    margin: 2em 15em;
+  }
+}
+
+@media (max-width: 1140px) {
+  #survey-form, #head {
+    margin: 2em 10em;
+  }
+}
+@media(max-width: 979px) {
+  #lex {
+    display: none;
+  }
+  #survey-form, #head {
+    margin: 2em 0;
+  }
+}
+
+@media(max-width: 660px) {
+  #survey-form label {
+    font-size: 100%;
+  }
+  div input[type="checkbox"] {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  body {font-size: 85%;}
+}
+
+@media (max-width: 300px) {
+  body {font-size: 75%;}
+}
